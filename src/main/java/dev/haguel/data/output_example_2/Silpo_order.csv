@@ -1,31 +1,31 @@
 STORE;PRODUCT;PRICE;QUANTITY
-Silpo;Buckwheat;31.25;24.0
-Silpo;Sugar;22.2;107.0
-Silpo;Flour;24.2;99.0
-Silpo;Buckwheat;31.85;24.0
-Silpo;Sugar;21.4;107.0
-Silpo;Flour;22.2;99.0
-Silpo;Rice;36.25;30.0
-Silpo;Salt;20.0;115.0
-Silpo;Butter;46.0;40.0
-Silpo;Cheese;56.0;20.0
-Silpo;Yogurt;13.0;95.0
-Silpo;Eggs;18.5;140.0
-Silpo;Chicken;121.0;70.0
-Silpo;Beef;151.0;35.0
-Silpo;Pork;131.0;55.0
-Silpo;Tomatoes;26.0;85.0
-Silpo;Cucumbers;22.5;80.0
-Silpo;Onions;21.0;65.0
-Silpo;Orange Juice;34.5;40.0
-Silpo;Apple Juice;30.5;55.0
-Silpo;Grape Juice;33.5;45.0
-Silpo;Bread;15.5;190.0
-Silpo;Milk;23.0;140.0
-Silpo;Yogurt;13.5;90.0
-Silpo;Pasta;29.5;105.0
-Silpo;Tomato Sauce;18.5;85.0
-Silpo;Cheese;55.5;40.0
-Silpo;Chicken Breast;131.0;65.0
-Silpo;Beef Steak;161.0;30.0
-Silpo;Pork Chops;141.0;45.0
+Silpo;Buckwheat;31.25;24.0;
+Silpo;Sugar;22.2;107.0;
+Silpo;Flour;24.2;99.0;
+Silpo;Buckwheat;31.85;24.0;
+Silpo;Sugar;21.4;107.0;
+Silpo;Flour;22.2;99.0;
+Silpo;Rice;36.25;30.0;
+Silpo;Salt;20.0;115.0;
+Silpo;Butter;46.0;40.0;
+Silpo;Cheese;56.0;20.0;
+Silpo;Yogurt;13.0;95.0;
+Silpo;Eggs;18.5;140.0;
+Silpo;Chicken;121.0;70.0;
+Silpo;Beef;151.0;35.0;
+Silpo;Pork;131.0;55.0;
+Silpo;Tomatoes;26.0;85.0;
+Silpo;Cucumbers;22.5;80.0;
+Silpo;Onions;21.0;65.0;
+Silpo;Orange Juice;34.5;40.0;
+Silpo;Apple Juice;30.5;55.0;
+Silpo;Grape Juice;33.5;45.0;
+Silpo;Bread;15.5;190.0;
+Silpo;Milk;23.0;140.0;
+Silpo;Yogurt;13.5;90.0;
+Silpo;Pasta;29.5;105.0;
+Silpo;Tomato Sauce;18.5;85.0;
+Silpo;Cheese;55.5;40.0;
+Silpo;Chicken Breast;131.0;65.0;
+Silpo;Beef Steak;161.0;30.0;
+Silpo;Pork Chops;141.0;45.0;

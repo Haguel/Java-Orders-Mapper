@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class App
 {
-    // To try this program please delete output_example_* folders with files from /data folder
+    // To try this program please delete output_example_* directory with files from /data directory
     public static void main(String[] args) {
         Path dataPath = Paths.get(".", "src", "main", "java", "dev", "haguel", "data");
         Path inputPath1 = dataPath.resolve(Paths.get("input_example_1"));
@@ -29,7 +29,7 @@ public class App
             // example #1
             // reads files and then writing them
             List<Order> orders = orderService.readOrders(inputPath1);
-            orderService.writeOrders(outputPath1, "orders_", ".csv", orders);
+            orderService.writeOrders(outputPath1, "order_", ".csv", orders);
 
             // example #2
             // reads files, separates them by store and writes then

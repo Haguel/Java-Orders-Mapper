@@ -7,9 +7,9 @@ import dev.haguel.entitiy.Store;
 
 import java.util.List;
 
-public class MapperImpl implements Mapper {
+public class CsvMapper implements Mapper {
     @Override
-    public ProductReceipt csvToProductReceipt(List<String> values) {
+    public ProductReceipt mapToProductReceipt(List<String> values) {
         String storeName = values.get(0);
         String productName = values.get(1);
         Double price = Double.valueOf(values.get(2));
@@ -22,7 +22,7 @@ public class MapperImpl implements Mapper {
     }
 
     @Override
-    public List<String> productReceiptToCsv(ProductReceipt productReceipt) {
+    public List<String> mapFromProductReceipt(ProductReceipt productReceipt) {
         List<String> data = Lists.newArrayList(
                 productReceipt.getStore().getName(),
                 productReceipt.getProduct().getName(),

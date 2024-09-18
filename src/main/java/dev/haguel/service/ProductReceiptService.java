@@ -25,7 +25,7 @@ public class ProductReceiptService {
         if(directory.exists() && directory.isDirectory()) {
             File[] sourceFiles = directory.listFiles();
             if(sourceFiles.length == 0) {
-                throw new FileNotFoundException("Absense of source files in provided directory");
+                throw new FileNotFoundException("Absence of source files in provided directory");
             }
 
             List<File> sortedSourceFiles = Arrays.stream(sourceFiles)
@@ -33,7 +33,7 @@ public class ProductReceiptService {
                     .collect(Collectors.toList());
 
             for (File sourceFile : sortedSourceFiles) {
-                productReceipts.add(storage.read(sourceFile.toPath(), mapper::csvToProductReceipt));
+                productReceipts.add(storage.read(sourceFile.toPath(), mapper::mapToProductReceipt));
             }
         } else {
             throw new DirectoryNotFoundException("Absence of provided source directory");
@@ -44,6 +44,6 @@ public class ProductReceiptService {
 
     public void writeProductReceiptsFrom(Path destFilePath, Storage storage,
                                          Mapper mapper, List<ProductReceipt> productReceipts) throws IOException {
-        storage.write(destFilePath, productReceipts, mapper::productReceiptToCsv);
+        storage.write(destFilePath, productReceipts, mapper::mapFromProductReceipt);
     }
 }

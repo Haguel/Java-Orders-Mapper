@@ -24,11 +24,11 @@ public class OrderService {
                 .isHeaderLine(true)
                 .build();
         Storage storage = new CsvStorage(csvStorageProps);
-        Mapper mapper = new MapperImpl();
+        Mapper mapper = new CsvMapper();
         List<List<ProductReceipt>> wrappedProductReceipts = productReceiptService.readProductReceiptsFrom(source, storage, mapper);
         List<Order> orders = new ArrayList<>();
 
-        for(List<ProductReceipt> productReceipts : wrappedProductReceipts) {
+        for (List<ProductReceipt> productReceipts : wrappedProductReceipts) {
             orders.add(new Order(productReceipts));
         }
 
@@ -42,11 +42,11 @@ public class OrderService {
                 .isHeaderLine(true)
                 .build();
         Storage storage = new CsvStorage(csvStorageProps);
-        Mapper mapper = new MapperImpl();
+        Mapper mapper = new CsvMapper();
         List<List<ProductReceipt>> wrappedProductReceipts = productReceiptService.readProductReceiptsFrom(sourceDirectoryPath, storage, mapper);
         List<ProductReceipt> combinedProductsReceipts = new ArrayList<>();
 
-        for(List<ProductReceipt> productReceipts : wrappedProductReceipts) {
+        for (List<ProductReceipt> productReceipts : wrappedProductReceipts) {
             combinedProductsReceipts.addAll(productReceipts);
         }
 
@@ -62,10 +62,10 @@ public class OrderService {
                 .headerLines(Lists.newArrayList("STORE", "PRODUCT", "PRICE", "QUANTITY"))
                 .build();
         Storage storage = new CsvStorage(csvStorageProps);
-        Mapper mapper = new MapperImpl();
+        Mapper mapper = new CsvMapper();
 
         int counter = 1;
-        for(Order order : orders) {
+        for (Order order : orders) {
             Path orderPath = destDirectoryPath.resolve(Paths.get(nameFileRule + counter + extension));
 
             productReceiptService.writeProductReceiptsFrom(orderPath, storage, mapper, order.getProductReceipts());
@@ -81,7 +81,7 @@ public class OrderService {
                 .headerLines(Lists.newArrayList("STORE", "PRODUCT", "PRICE", "QUANTITY"))
                 .build();
         Storage storage = new CsvStorage(csvStorageProps);
-        Mapper mapper = new MapperImpl();
+        Mapper mapper = new CsvMapper();
 
         productReceiptService.writeProductReceiptsFrom(destFilePath, storage, mapper, order.getProductReceipts());
     }
@@ -89,7 +89,7 @@ public class OrderService {
     private HashMap<String, Order> getOrdersSeparatedByStore(List<ProductReceipt> productReceipts) {
         HashMap<String, Order> separatedOrders = new HashMap<>();
 
-        for(ProductReceipt productReceipt : productReceipts) {
+        for (ProductReceipt productReceipt : productReceipts) {
             separatedOrders.merge(
                     productReceipt.getStore().getName(),
                     new Order(productReceipt),
@@ -98,33 +98,4 @@ public class OrderService {
 
         return separatedOrders;
     }
-
-//    public void readAndWriteOrdersSeparatedByStore(Path source, Path dest) {
-//
-//
-//        try {
-//
-//            HashMap<String, Order> separatedOrders = orderService.getOrdersSeparatedByStore(productReceipts);
-//
-//            separatedOrders.entrySet().stream().forEach((entrySet) -> {
-//                String storeName = entrySet.getKey();
-//                Order order = entrySet.getValue();
-//
-//                System.out.println(storeName + " order: ");
-//                order.printTable();
-//
-//                Path outputPath = dest.resolve(Paths.get(storeName + "_order.csv"));
-//                try {
-//                    csvStorage.write(outputPath, Lists.newArrayList(order.getProductReceipts()), mapper::productReceiptToCsv);
-//                } catch (IOException e) {
-//                    throw new RuntimeException(e);
-//                }
-//            });
-//
-//
-//        } catch (IOException e) {
-//            System.out.println("Oops! Can't read order.");
-//            e.printStackTrace();
-//        }
-//    }
 }

@@ -1,32 +1,32 @@
 STORE;PRODUCT;PRICE;QUANTITY
-ATB;Buckwheat;30.25;120.0
-ATB;Sugar;21.25;170.0
-ATB;Flour;26.5;80.0
-ATB;Buckwheat;31.25;120.0
-ATB;Sugar;20.25;170.0
-ATB;Flour;23.5;80.0
-ATB;Milk;21.4;110.0
-ATB;Rice;35.0;130.0
-ATB;Salt;19.75;160.0
-ATB;Butter;45.0;50.0
-ATB;Cheese;55.5;60.0
-ATB;Yogurt;12.75;100.0
-ATB;Eggs;18.0;150.0
-ATB;Chicken;120.0;75.0
-ATB;Beef;150.0;40.0
-ATB;Pork;130.0;60.0
-ATB;Tomatoes;25.5;90.0
-ATB;Cucumbers;22.0;85.0
-ATB;Onions;20.75;70.0
-ATB;Orange Juice;34.0;45.0
-ATB;Apple Juice;30.0;60.0
-ATB;Grape Juice;33.0;50.0
-ATB;Bread;15.0;200.0
-ATB;Milk;22.5;150.0
-ATB;Yogurt;13.0;100.0
-ATB;Pasta;29.0;110.0
-ATB;Tomato Sauce;18.0;90.0
-ATB;Cheese;55.0;45.0
-ATB;Chicken Breast;130.0;70.0
-ATB;Beef Steak;160.0;35.0
-ATB;Pork Chops;140.0;50.0
+ATB;Buckwheat;30.25;120.0;
+ATB;Sugar;21.25;170.0;
+ATB;Flour;26.5;80.0;
+ATB;Buckwheat;31.25;120.0;
+ATB;Sugar;20.25;170.0;
+ATB;Flour;23.5;80.0;
+ATB;Milk;21.4;110.0;
+ATB;Rice;35.0;130.0;
+ATB;Salt;19.75;160.0;
+ATB;Butter;45.0;50.0;
+ATB;Cheese;55.5;60.0;
+ATB;Yogurt;12.75;100.0;
+ATB;Eggs;18.0;150.0;
+ATB;Chicken;120.0;75.0;
+ATB;Beef;150.0;40.0;
+ATB;Pork;130.0;60.0;
+ATB;Tomatoes;25.5;90.0;
+ATB;Cucumbers;22.0;85.0;
+ATB;Onions;20.75;70.0;
+ATB;Orange Juice;34.0;45.0;
+ATB;Apple Juice;30.0;60.0;
+ATB;Grape Juice;33.0;50.0;
+ATB;Bread;15.0;200.0;
+ATB;Milk;22.5;150.0;
+ATB;Yogurt;13.0;100.0;
+ATB;Pasta;29.0;110.0;
+ATB;Tomato Sauce;18.0;90.0;
+ATB;Cheese;55.0;45.0;
+ATB;Chicken Breast;130.0;70.0;
+ATB;Beef Steak;160.0;35.0;
+ATB;Pork Chops;140.0;50.0;

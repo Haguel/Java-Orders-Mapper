@@ -3,6 +3,8 @@ package dev.haguel.io_service;
 import com.google.common.base.Joiner;
 import com.google.common.base.Splitter;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -11,6 +13,8 @@ import java.util.*;
 import java.util.function.Function;
 
 @AllArgsConstructor
+@Getter
+@Setter
 public class CsvStorage implements Storage {
     private CsvStorageProps props;
 
@@ -68,7 +72,7 @@ public class CsvStorage implements Storage {
         ListIterator<T> valuesIterator = values.listIterator();
         while (valuesIterator.hasNext()) {
             List<String> dataList = mapper.apply(valuesIterator.next());
-            String data = Joiner.on(valuesDelimiter).join(dataList);
+            String data = Joiner.on(valuesDelimiter).join(dataList) + ";";
 
             if(valuesIterator.hasNext()) data += "\n";
 
