@@ -1,4 +1,4 @@
-package dev.haguel.test_util;
+package dev.haguel._test_util;
 
 import com.google.common.collect.Lists;
 import dev.haguel.io_service.CsvStorage;

@@ -14,9 +14,9 @@ import java.util.Map;
 
 public class App
 {
-    // To try this program please delete output_example_* directory with files from /data directory
+    // To try this program please delete output_example_* directory with files from resources/data directory
     public static void main(String[] args) {
-        Path dataPath = Paths.get(".", "src", "main", "java", "dev", "haguel", "data");
+        Path dataPath = Paths.get(".", "src", "main", "resources", "data");
         Path inputPath1 = dataPath.resolve(Paths.get("input_example_1"));
         Path outputPath1 = dataPath.resolve(Paths.get("output_example_1"));
         Path outputPath2 = dataPath.resolve(Paths.get("output_example_2"));
