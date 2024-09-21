@@ -32,7 +32,7 @@ class ProductReceiptServiceTest {
     @BeforeAll
     public void setUp() {
         productReceiptService = new ProductReceiptService();
-        dataPath = Paths.get(".", "src", "test", "java", "dev", "haguel", "data");
+        dataPath = Paths.get(".", "src", "test", "java", "dev", "haguel", "_test_data");
         csvStorage = Mockito.spy(new CsvStorage());
         mapper = new CsvMapper();
     }

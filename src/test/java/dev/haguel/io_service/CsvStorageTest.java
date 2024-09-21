@@ -23,7 +23,7 @@ class CsvStorageTest {
     @BeforeAll
     public void setUp() {
         csvStorage = new CsvStorage();
-        dataPath = Paths.get(".", "src", "test", "java", "dev", "haguel", "data");
+        dataPath = Paths.get(".", "src", "test", "java", "dev", "haguel", "_test_data");
     }
 
     @BeforeEach
